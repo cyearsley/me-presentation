@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Caleb</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -25,8 +26,97 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>
+						Caleb Yearsley
+					</h2>
+					<div class="fragment fade-down">Software Engineer</div>
+					<div class="fragment fade-down">
+						Emphasis on Software<br />
+						and Web Application Development
+					</div>
+				</section>
+				<section>
+					<h2>Who is this guy?</h2>
+					<div class="fragment fade-up">
+						<ul>
+							<li>Professional</li>
+							<li>Personal</li>
+						</ul>
+					</div>
+				</section>
+				<section data-background="#4d7e65">
+					<section>
+						<h2>Who is Professional Caleb?</h2>
+						What makes me qualified?
+					</section>
+					<section>
+						<h3>Education</h3>
+						<div class="fragment fade-up">
+							Bachelor of Science in Computer Science
+							<p class="foot-note">With an emphasis in software development</p>
+						</div>
+					</section>
+					<section>
+						<h3>Professional Experience</h3>
+						<p class="fragment fade-in-then-semi-out">I have been in the industry for nearly five years</p>
+						<p class="fragment fade-in-then-semi-out">Have had exposure to several different teams</p>
+						<p class="fragment fade-in-then-semi-out">Have experience with many different methodologies and practices</p>
+						<p class="fragment fade-in-then-semi-out">Experience with many different technologies</p>
+						<p class="fragment fade-in-then-semi-out">I LOVE working and collaborating with others</p>
+					</section>
+					<section>
+						<h3>Personal Projects</h3>
+						<div class="foot-note">Including School Projects</div>
+						<p class="list-item fragment fade-in-then-semi-out">Computer Vision - Improved Edge Detection in Grayscale Images Using Adaptive Thresholding</p>
+						<p class="list-item fragment fade-in-then-semi-out">Game Development - An online multiplayer game using web sockets</p>
+						<p class="list-item fragment fade-in-then-semi-out">Game Development - Game with maze generation and path finding</p>
+						<p class="list-item fragment fade-in-then-semi-out">Software Application - Property Manager Application</p>
+					</section>
+				</section>
+				<section data-background="#b5533c">
+					<section>
+						<h2>Let's Get Personal</h2>
+						Who am I personally
+					</section>
+					<section>
+						<div>I am a family man</div>
+					</section>
+					<section>
+						<div>I Love Music</div>
+						<img src="https://media.giphy.com/media/sqSbst6WSYdTW/giphy.gif" />
+					</section>
+					<section>
+						<div>I am a gamer</div>
+						<img src="https://media1.tenor.com/images/13790d0f43118600e5c646fc341c765c/tenor.gif?itemid=15077212" />
+					</section>
+					<section>
+						<h3>Favorite Technical Topics/Technolgies:</h3>
+						<p class="list-item fragment fade-in-then-semi-out">JavaScript/TypeScript</p>
+						<p class="list-item fragment fade-in-then-semi-out">React.js/Vue.js</p>
+						<p class="list-item fragment fade-in-then-semi-out">Designing Application Architecture</p>
+						<p class="list-item fragment fade-in-then-semi-out">Design of ReSTful APIs</p>
+						<p class="list-item fragment fade-in-then-semi-out">Object Oriented Programming</p>
+						<p class="list-item fragment fade-in-then-semi-out">SQL</p>
+						<p class="list-item fragment fade-in-then-semi-out">Machine Learning</p>
+						<p class="list-item fragment fade-in-then-semi-out">Math - Multivariable Calculus and Linear Algebra</p>
+					</section>
+				</section>
+				<section>
+					<h3>Professional Accomplishments</h3>
+				</section>
+				<section>
+					<p class="fragment grow">grow</p>
+					<p class="fragment shrink">shrink</p>
+					<p class="fragment fade-out">fade-out</p>
+					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+					<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+					<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+					<p class="fragment highlight-current-blue">blue only once</p>
+					<p class="fragment highlight-red">highlight-red</p>
+					<p class="fragment highlight-green">highlight-green</p>
+					<p class="fragment highlight-blue">highlight-blue</p>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +127,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				backgroundTransition: 'zoom',
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
