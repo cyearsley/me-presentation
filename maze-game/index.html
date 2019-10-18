@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>The Maze Game</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="master.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="mazeAlgorithm.js"></script>
+  <script src="graphics.js"></script>
+  <script src="gameLoop.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="main-row row">
+        <div class=col-lg-6>
+          <canvas id="canvas-main" width=600 height=600>
+            Your browser does not support HTML5!
+          </canvas>
+        </div>
+        <div class=col-lg-6>
+          <div class="nav-container">
+            <div class="menu-header">
+              <h2>Maze Menu</h2>
+            </div>
+            <div class="menu-option-container">
+              <h3>Maze Sizes:</h3>
+              <ul>
+                <li><h3><a class="new-maze-link" mazesize="5" href="#">5x5</a></h3></li>
+                <li><h3><a class="new-maze-link" mazesize="10" href="#">10x10</a></h3></li>
+                <li><h3><a class="new-maze-link" mazesize="15" href="#">15x15</a></h3></li>
+                <li><h3><a class="new-maze-link" mazesize="20" href="#">20x20</a></h3></li>
+              </ul>
+              <p>Shortcuts:</p>
+              <ul>
+                <li>Toggle Hint - 'H'</li>
+                <li>Toggle Breadcrumbs - 'B'</li>
+                <li>Toggle Path to Finish - 'P'</li>
+                <li>Toggle Score - 'Y'</li>
+                <li>Move the player with: WASD/IJKL</li>
+                <li>
+                  <h3>Player Name:</h3>
+                  <input class="player-name-input" value="Player1"></input>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div clas="jumbotron">
+      <h3>Highscores:</h3>
+    </div>
+    <ul class="hs-list">
+      
+    </ul>
+  </div>
+  <script>
+  var gl = new gameLoop();
+  gl.init();
+  </script>
+</body>
+</html>
